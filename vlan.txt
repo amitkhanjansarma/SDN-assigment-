@@ -1,0 +1,15 @@
+test@test:~$ sudo ovs-vsctl show
+test@test:~$ sudo ovs-vsctl add-br sdn-br0
+test@test:~$ sudo ovs-vsctl show
+test@test:~$ sudo ovs-vsctl del.port s1 s1-eth1
+test@test:~$ sudo ovs-vsctl del.port s1 s1-eth2 
+test@test:~$ sudo ovs-vsctl del.port s1 s1-eth3
+test@test:~$ sudo ovs-vsctl del.port s1 s1-eth4
+test@test:~$ sudo ovs-vsctl show
+test@test:~$ sudo ovs-vsctl add-br sdn-br0 s1-eth1 tag=10
+test@test:~$ sudo ovs-vsctl add-br sdn-br0 s1-eth2 tag=10
+test@test:~$ sudo ovs-vsctl add-br sdn-br0 s1-eth3 tag=10
+test@test:~$ sudo ovs-vsctl add-br sdn-br0 s1-eth4 tag=10
+test@test:~$ sudo ovs-vsctl show
+
+
